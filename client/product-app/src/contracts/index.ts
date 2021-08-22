@@ -2,7 +2,7 @@ export interface IProductAttributes {
   id: number;
   product_name: string;
   product_description: string;
-  product_varieties: IProductVarieties[];
+  product_varieties: any;
   date_uploaded: string;
   date_edited: string;
 }

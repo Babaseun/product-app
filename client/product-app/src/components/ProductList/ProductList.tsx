@@ -1,20 +1,22 @@
 import { useContext } from "react";
-import { ProductListContext } from "../../context/productListContext";
+import { ProductListContext } from "../../context/ProductListContext";
 import { IProductAttributes } from "../../contracts";
 import Product from "../Product/Product";
+
+import "./ProductList.css";
 
 function ProductList() {
   const [products] = useContext(ProductListContext);
 
   return (
-    <div>
+    <div className="container">
       {products.map((product: IProductAttributes) => (
         <div key={product.id}>
           <Product
             name={product.product_name}
             description={product.product_description}
             id={product.id}
-            varieties={product.product_varieties}
+            varieties={JSON.parse(product.product_varieties)}
             key={product.id}
           />
         </div>

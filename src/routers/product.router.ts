@@ -16,10 +16,7 @@ productRouter.get("/api/products", (req: Request, res: Response) => {
   return products.then((p) => res.status(200).send(p));
 });
 
-productRouter.post(
-  "/api/products",
-  productRules["forAddProduct"],
-  (req: Request, res: Response) => {
+productRouter.post("/api/products", productRules["forAddProduct"], (req: Request, res: Response) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) return res.status(422).json(errors.array());
     const payload = matchedData(req) as ProductAttributes;
@@ -28,14 +25,11 @@ productRouter.post(
     return product.then((p) => res.status(200).send(p));
   }
 );
-productRouter.put(
-  "/api/products",
-  productRules["forUpdateProduct"],
-  (req: Request, res: Response) => {
+productRouter.put("/api/products/:id", productRules["forUpdateProduct"], (req: Request, res: Response) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) return res.status(422).json(errors.array());
     const payload = matchedData(req) as ProductAttributes;
-    const product = productService.createProduct(payload);
+    const product = productService.updateProduct(payload);
 
     return product.then((p) => res.status(200).send(p));
   }

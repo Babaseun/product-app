@@ -1,7 +1,6 @@
 import { ProductAttributes } from "./../contracts/index";
 import { DataTypes, Model, Optional } from "sequelize";
 import { sequelize } from "../instances/sequelize";
-import moment from "moment";
 
 interface ProductCreationAttributes extends Optional<ProductAttributes, "id"> {}
 

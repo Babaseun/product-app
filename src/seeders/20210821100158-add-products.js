@@ -1,21 +1,5 @@
 "use strict";
 const faker = require("faker");
-// export interface ProductAttributes {
-//   id: number;
-//   product_name: string;
-//   product_description: string;
-//   product_varieties: ProductVarieties[];
-//   date_uploaded: string;
-//   date_edited: string;
-// }
-
-// export interface ProductVarieties {
-//   id: number;
-//   color: string;
-//   quantity: string;
-//   images: string[];
-//   price: string;
-// }
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -35,12 +19,12 @@ module.exports = {
                 "Pink",
               ]),
               images: [
-                faker.internet.url(),
-                faker.internet.url(),
-                faker.internet.url(),
+                faker.image.food(),
+                faker.image.food(),
+                faker.image.food(),
               ],
-              quantity: String(Math.random() * (20 - 1) + 1),
-              price: String(Math.random() * (100 - 10) + 10),
+              quantity: Math.floor(faker.commerce.price()),
+              price: faker.commerce.price(),
             },
           ]),
           date_uploaded: new Date(),

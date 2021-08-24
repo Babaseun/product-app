@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "build": "tsc -p"
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,8 @@
     "express": "^4.17.1",
     "express-validator": "^6.12.1",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
   }

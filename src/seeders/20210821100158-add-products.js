@@ -5,7 +5,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     try {
       const products = [];
-      let num = 100;
+      let num = 50;
       while (num--) {
         products.push({
           product_name: faker.commerce.productName(),

@@ -11,9 +11,11 @@ function App() {
       <Router>
         <CartProvider>
           <Nav />
-          <ProductProvider>
-            <ProductList />
-          </ProductProvider>
+          <Route exact path="/">
+            <ProductProvider>
+              <ProductList />
+            </ProductProvider>
+          </Route>
         </CartProvider>
       </Router>
     </div>

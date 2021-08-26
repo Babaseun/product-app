@@ -1,8 +1,8 @@
 version: "3.4"
 
 services:
-  productapp:
-    image: productapp
+  productserver:
+    image: productserver
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -17,6 +17,7 @@ services:
       sh -c  "npx sequelize db:migrate && npx sequelize db:seed:all && npm run dev"
     depends_on:
       - db
+
   db:
     image: postgres
     environment:

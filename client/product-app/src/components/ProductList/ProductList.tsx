@@ -10,7 +10,7 @@ function ProductList() {
 
   return (
     <div className="container">
-      {products.map((product: IProductAttributes) => (
+      {products.rows.map((product: IProductAttributes) => (
         <div key={product.id}>
           <Product
             name={product.product_name}

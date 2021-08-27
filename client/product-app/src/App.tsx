@@ -1,19 +1,21 @@
 import "./App.css";
-import Nav from "./components/Nav/Nav";
 import ProductList from "./components/ProductList/ProductList";
 import { ProductProvider } from "./context/ProductListContext";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
+import { Cart } from "./components/Cart/Cart";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <CartProvider>
-          <Nav />
+          <Cart />
           <Route exact path="/">
             <ProductProvider>
               <ProductList />
+              <Pagination />
             </ProductProvider>
           </Route>
         </CartProvider>

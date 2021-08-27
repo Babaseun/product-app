@@ -3,9 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-.App {
-  text-align: center;
+body {
+  background: gainsboro;
 }
+/* .App {
+  text-align: center;
+} */
 
 .App-logo {
   height: 40vmin;

@@ -1,6 +1,6 @@
-# product-app
+# A mini e-commerce application
 
-## How to start the application
+Deployed UI on AWS using an EC2 instance and docker compose to run
+both the database and the server.
 
-- Type docker-compose up on your terminal
-- Navigate to localhost:8080
+URL http://18.208.178.156:8080/

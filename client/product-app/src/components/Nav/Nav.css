@@ -3,27 +3,32 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: darkblue;
   align-items: center;
-  color: aliceblue;
 }
 
 .navbar-right {
   display: flex;
   margin-right: 1.25rem;
 }
-.navbar-right  a{
- color: aliceblue;
+.navbar-right a {
+  color: aliceblue;
 }
-li{
-list-style: none;
-margin-right: 20px;
+li {
+  list-style: none;
+  margin-right: 20px;
 }
-.badge{
+li i,
+.cart-brand {
+  color: black;
+}
+
+.badge {
   background: blue;
   color: aliceblue;
 }
-.brand{
+.brand {
   margin-left: 20px;
   font-size: 1.875rem;
 }
+
+

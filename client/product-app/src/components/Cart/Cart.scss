@@ -105,6 +105,8 @@ $light-text: #abb0be;
   border-radius: 3px;
   font-size: 16px;
   margin: 25px 0 15px 0;
+  width: 100%;
+  border: none;
 }
 
 .cart-control {
@@ -134,3 +136,4 @@ ul .shopping-cart-items {
   justify-content: center;
   margin-top: 20px;
 }
+

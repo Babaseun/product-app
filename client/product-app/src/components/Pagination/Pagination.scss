@@ -1,7 +1,14 @@
 .pagination-container {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 li {
   margin: 0;
+}
+.show {
+  display: block;
+}
+.no-show {
+  display: none;
 }

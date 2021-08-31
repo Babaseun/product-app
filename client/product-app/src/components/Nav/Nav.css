@@ -25,10 +25,13 @@ li i,
 .badge {
   background: blue;
   color: aliceblue;
+  margin-left: 10px;
 }
 .brand {
   margin-left: 20px;
   font-size: 1.875rem;
+  font-weight: bold;
+  color: #6394f8;
 }
 
 

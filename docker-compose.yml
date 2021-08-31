@@ -8,11 +8,8 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 8080:8080
-    environment:
-      PGUSER: postgres
-      PGPASSWORD: 1234
-      PGDATABASE: aviosDB
-      PGHOST: db
+    env_file: .env
+
     command: >
       sh -c  "npx sequelize db:migrate && npx sequelize db:seed:all && npm run dev"
     depends_on:
@@ -20,9 +17,6 @@ services:
 
   db:
     image: postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: aviosDB
     ports:
       - 5430:5432
+    env_file: .env

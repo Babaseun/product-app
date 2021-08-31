@@ -14,3 +14,8 @@ export interface IProductVarieties {
   images: string[];
   price: string;
 }
+export interface ButtonAttributes {
+  id: number;
+  status: string;
+  showButton: string;
+}

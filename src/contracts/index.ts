@@ -14,3 +14,10 @@ export interface ProductVarieties {
   images: string[];
   price: string;
 }
+
+export interface ICheckOutProductAttributes {
+  id: number;
+  quantity: string;
+  price: string;
+  productName: string;
+}

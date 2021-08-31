@@ -19,9 +19,10 @@ module.exports = {
                 "Pink",
               ]),
               images: [
-                faker.image.food(),
-                faker.image.food(),
-                faker.image.food(),
+                faker.image.unsplash.technology(),
+                faker.image.unsplash.nature(),
+                faker.image.unsplash.buildings(),
+                faker.image.unsplash.objects(),
               ],
               quantity: Math.floor(faker.commerce.price()),
               price: faker.commerce.price(),

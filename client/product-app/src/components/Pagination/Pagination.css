@@ -5,9 +5,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
 }
 
 li {
   margin: 0;
+}
+
+.show {
+  display: block;
+}
+
+.no-show {
+  display: none;
 }
 /*# sourceMappingURL=Pagination.css.map */

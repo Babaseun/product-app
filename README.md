@@ -15,4 +15,4 @@ Technologies used
 8. Express
 9. React
 
-URL <http://18.208.178.156:8080/>
+
